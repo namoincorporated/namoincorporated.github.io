@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Namo-Inc Boot</title>
+<title>Namo Inc.</title>
 <style>
   body {
     margin: 0;
@@ -34,7 +34,7 @@ const screen = document.getElementById("screen");
 
 // Array of sample boot messages
 const messages = [
-  "[    0.000000] Initializing Namo-Inc kernel...",
+  "[    0.000000] why did i make this",
   "[    0.123456] Loading modules...",
   "[    0.234567] [  OK  ] CPU: VIRTUAL-CORE 4x 3.1GHz",
   "[    0.345678] [  OK  ] RAM: 8192 MB",
@@ -48,9 +48,9 @@ const messages = [
 
 // Generate extra random system messages to “flood” screen
 function randomMessage() {
-  const actions = ["Starting", "Loading", "Checking", "Initializing", "Mounting"];
-  const services = ["systemd-logind", "udev", "dbus", "network-manager", "display-manager"];
-  const statuses = ["[  OK  ]", "[FAILED]", "[DEPENDENCY]"];
+  const actions = ["NO.", "aukakubakubuoabalub", "yes", "no no", "yes"];
+  const services = ["a", "posmadethis", "idk-tbh", "namo", "Pattawee025 wuz here"];
+  const statuses = ["[yay it good]", "[failure]", "[not sure]"];
   const time = (Math.random() * 5).toFixed(6);
 
   const action = actions[Math.floor(Math.random()*actions.length)];
@@ -73,7 +73,7 @@ function printLine() {
     let line = lines[i];
 
     // Color the statuses
-    line = line.replace("[  OK  ]", '<span class="ok">[  OK  ]</span>');
+    line = line.replace("[yay it good]", '<span class="ok">[yay it good]</span>');
     line = line.replace("[FAILED]", '<span class="fail">[FAILED]</span>');
     line = line.replace("[DEPENDENCY]", '[DEPENDENCY]');
 
