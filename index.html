@@ -74,7 +74,7 @@ function printLine() {
 
     // Color the statuses
     line = line.replace("[yay it good]", '<span class="ok">[yay it good]</span>');
-    line = line.replace("[FAILED]", '<span class="fail">[FAILED]</span>');
+    line = line.replace("[failure]", '<span class="fail">[failure]</span>');
     line = line.replace("[DEPENDENCY]", '[DEPENDENCY]');
 
     screen.innerHTML += line + "\n";
@@ -87,7 +87,7 @@ function printLine() {
   } else {
     setTimeout(() => {
       window.location.href = "/home";
-    }, 500);
+    }, 150);
   }
 }
 
